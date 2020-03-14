@@ -11,9 +11,9 @@ fs.readFile(csvFile, 'utf8', async function(err, data) {
   const total = []
   dailyArray.forEach((item,i) => {
     positive.push([i,parseInt(item.totale_attualmente_positivi)])
-    dead.push([i,item.deceduti])
-    cured.push([i,item.dimessi_guariti])
-    total.push([i,item.totale_casi])
+    dead.push([i,parseInt(item.deceduti)])
+    cured.push([i,parseInt(item.dimessi_guariti)])
+    total.push([i,parseInt(item.totale_casi)])
   });
 
   const FORECAST_TOMORROW = dailyArray.length
@@ -30,10 +30,15 @@ fs.readFile(csvFile, 'utf8', async function(err, data) {
     return return_object
 
   }
+  console.log("Tomorrow:")
+  console.log("Positive", forecast(positive,3))
+  console.log("Dead", forecast(dead,3))
+  console.log("Cured", forecast(cured,3))
+  console.log("Total", forecast(total,3))
 
-  console.log("Positive tomorrow", forecast(positive,3))
-  console.log("Positive next week", forecast(positive,3,FORECAST_ONE_WEEK))
-  console.log("Dead", forecast(dead,3,FORECAST_TOMORROW))
-  //console.log("Cured", forecast(cured,3))
-  //console.log("Total", forecast(total,3))
+  console.log("Next week:")
+  console.log("Positive", forecast(positive,3,FORECAST_ONE_WEEK))
+  console.log("Dead", forecast(dead,3,FORECAST_ONE_WEEK))
+  console.log("Cured", forecast(cured,3,FORECAST_ONE_WEEK))
+  console.log("Total", forecast(total,3,FORECAST_ONE_WEEK))
 })
