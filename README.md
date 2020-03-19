@@ -5,9 +5,16 @@
 [![GitHub license](https://img.shields.io/badge/License-Creative%20Commons%20Attribution%204.0%20International-blue)](https://github.com/pcm-dpc/COVID-19/blob/master/LICENSE)
 [![GitHub commit](https://img.shields.io/github/last-commit/pcm-dpc/COVID-19)](https://github.com/pcm-dpc/COVID-19/commits/master)
 
+## Wiki (in costruzione/under construction)
+
+[Wiki](https://github.com/pcm-dpc/COVID-19/wiki)<br>
+[Esempio di pagina](https://github.com/pcm-dpc/COVID-19/wiki/1.it-Dati:-andamento-nazionale)
+
 ## Avvisi
 
 ```diff
+- 18/03/2020: dati Regione Campania non pervenuti.
+- 18/03/2020: dati Provincia di Parma non pervenuti.
 - 17/03/2020: dati Provincia di Rimini non aggiornati.
 - 16/03/2020: dati P.A. Trento e Puglia non pervenuti.
 - 11/03/2020: dati Regione Abruzzo non pervenuti.
