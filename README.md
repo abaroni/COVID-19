@@ -5,6 +5,20 @@
 [![GitHub license](https://img.shields.io/badge/License-Creative%20Commons%20Attribution%204.0%20International-blue)](https://github.com/pcm-dpc/COVID-19/blob/master/LICENSE)
 [![GitHub commit](https://img.shields.io/github/last-commit/pcm-dpc/COVID-19)](https://github.com/pcm-dpc/COVID-19/commits/master)
 
+## Aggiornamenti dataset
+
+```diff
+Da sabato 21/03/2020 (aggiornamento 18:30)
+1. ogni data sarà convertita nel formato standard ISO8601: *YYYY-MM-DDTHH:MM:SS* - *2020-03-18T19:14:29*. Tutte le date saranno in UTC.
+2. ad ogni dataset sarà aggiunto un campo note per dare informazioni sul dato specifico
+3. sarà realizzato un nuovo dataset per fornire informazioni sui dati
+
+From saturday 21/03/2020 (update 18:30)
+1. every date will be converted in ISO8601 format standard: *YYYY-MM-DDTHH:MM:SS* - *2020-03-18T19:14:29*. All dates will be in UTC.
+2. a note field will be added to each dataset to give informations on the specific data
+3. a new dataset will be released to give informations on data
+```
+
 ## Wiki (in costruzione/under construction)
 
 [Wiki](https://github.com/pcm-dpc/COVID-19/wiki)<br>
@@ -70,11 +84,10 @@ COVID-19/
 
 ### Dati per Regione
 
-**Directory:**  dati-regioni
-
-**Struttura file giornaliero:** dpc-covid19-ita-regioni-yyyymmdd.csv (dpc-covid19-ita-regioni-20200224.csv)
-
-**File complessivo:** dpc-covid19-ita-regioni.csv
+**Directory:**  dati-regioni<br>
+**Struttura file giornaliero:** dpc-covid19-ita-regioni-yyyymmdd.csv (dpc-covid19-ita-regioni-20200224.csv)<br>
+**File complessivo:** dpc-covid19-ita-regioni.csv<br>
+**File ultimi dati (latest):** dpc-covid19-ita-regioni-latest.csv
 
 | Nome campo                  | Descrizione                       | Description                            | Formato                       | Esempio             |
 |-----------------------------|-----------------------------------|----------------------------------------|-------------------------------|---------------------|
@@ -96,17 +109,15 @@ COVID-19/
 | **tamponi**                     | Totale tamponi                    | Tests performed                        | Numero                        | 3                   |
 
 
-*Le Province autonome di Trento e Bolzano sono indicate in "denominazione regione" e con il codice 04 del Trentino Alto Adige.* 
-
-*Viene messo a disposizione un file JSON complessivo di tutte le date nella cartella "dati-json": dpc-covid19-ita-regioni.json* 
+*Le Province autonome di Trento e Bolzano sono indicate in "denominazione regione" e con il codice 04 del Trentino Alto Adige.*<br>
+*Viene messo a disposizione un file JSON complessivo di tutte le date nella cartella "dati-json": dpc-covid19-ita-regioni.json* e rispettivo file ultimi dati (latest) dpc-covid19-ita-regioni-latest.json
 
 ### Dati per Provincia
 
-**Directory:**  dati-province
-
-**Struttura file giornaliero:** dpc-covid19-ita-province-yyyymmdd.csv (dpc-covid19-ita-province-20200224.csv)
-
-**File complessivo:** dpc-covid19-ita-province.csv
+**Directory:**  dati-province<br>
+**Struttura file giornaliero:** dpc-covid19-ita-province-yyyymmdd.csv (dpc-covid19-ita-province-20200224.csv)<br>
+**File complessivo:** dpc-covid19-ita-province.csv<br>
+**File ultimi dati (latest):** dpc-covid19-ita-province-latest.csv
 
 | Nome campo              | Descrizione                         | Description                     | Formato            | Esempio              |
 |-------------------------|-------------------------------------|---------------------------------|--------------------|----------------------|
@@ -121,19 +132,16 @@ COVID-19/
 | **long**                    | Longitudine                         | Longitude                       | WGS84              | 13.70439971          |
 | **totale_casi**             | Totale casi positivi                | Total amount of positive cases  | Numero             | 3                    |
 
-*Le Province autonome di Trento e Bolzano sono indicate in "denominazione regione" e con il codice 04 del Trentino Alto Adige.* 
-
-*Ogni Regione ha una Provincia denominata "In fase di definizione/aggiornamento" con il codice provincia da 979 a 999, utile ad indicare i dati ancora non assegnati alle Province.*
-
-*Viene messo a disposizione un file JSON complessivo di tutte le date nella cartella "dati-json": dpc-covid19-ita-province.json*
+*Le Province autonome di Trento e Bolzano sono indicate in "denominazione regione" e con il codice 04 del Trentino Alto Adige.*<br>
+*Ogni Regione ha una Provincia denominata "In fase di definizione/aggiornamento" con il codice provincia da 979 a 999, utile ad indicare i dati ancora non assegnati alle Province.*<br>
+*Viene messo a disposizione un file JSON complessivo di tutte le date nella cartella "dati-json": dpc-covid19-ita-province.json* e rispettivo file ultimi dati (latest) dpc-covid19-ita-province-latest.json
 
 ### Andamento nazionale
 
-**Directory:**  dati-andamento-nazionale
-
-**Struttura file giornaliero:** dpc-covid19-ita-andamento-nazionale-yyyymmdd.csv (dpc-covid19-ita-andamento-nazionale-20200224.csv)
-
-**File complessivo:** dpc-covid19-ita-andamento-nazionale.csv
+**Directory:**  dati-andamento-nazionale<br>
+**Struttura file giornaliero:** dpc-covid19-ita-andamento-nazionale-yyyymmdd.csv (dpc-covid19-ita-andamento-nazionale-20200224.csv)<br>
+**File complessivo:** dpc-covid19-ita-andamento-nazionale.csv<br>
+**File ultimi dati (latest):** dpc-covid19-ita-regioni-latest.csv
 
 
 | Nome campo                  | Descrizione                       | Description                            | Formato                       | Esempio             |
@@ -153,18 +161,12 @@ COVID-19/
 
 
 
-*Viene messo a disposizione un file JSON complessivo di tutte le date nella cartella "dati-json": dpc-covid19-ita-andamento-nazionale.json*
-
+*Viene messo a disposizione un file JSON complessivo di tutte le date nella cartella "dati-json": dpc-covid19-ita-andamento-nazionale.json* e rispettivo file ultimi dati (latest) dpc-covid19-ita-andamento-nazionale-latest.json
+<br><br>
 **Licenza:** [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/deed.en) - [Visualizza licenza](https://github.com/pcm-dpc/COVID-19/blob/master/LICENSE)
-
-
-
-**Editore/Autore del dataset:** Dipartimento della Protezione Civile
-
-**Temi del dataset:** [Salute umana e sicurezza - Human health and safety](http://inspire.ec.europa.eu/theme/hh) (Inspire)
-
-**Categoria ISO 19115:** Salute
-
-*Dati forniti dal Ministero della Salute*
-
+<br><br><br>
+**Editore/Autore del dataset:** Dipartimento della Protezione Civile<br>
+**Temi del dataset:** [Salute umana e sicurezza - Human health and safety](http://inspire.ec.europa.eu/theme/hh) (Inspire)<br>
+**Categoria ISO 19115:** Salute<br>
+*Dati forniti dal Ministero della Salute*<br>
 *Elaborazione e gestione dati a cura del Dipartimento della Protezione Civile*
